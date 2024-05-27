@@ -8,9 +8,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         @vite('resources/css/app.css')
     </head>
-    <body class="antialiased bg-gray-100 dark:bg-gray-900">
+    <body class="bg-center bg-no-repeat bg-cover" style="background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg2.jpg); min-height: 100vh;">
         
-        <div class="relative flex items-center justify-center min-h-screen bg-dots-darker bg-center dark:bg-dots-lighter selection:bg-red-500 selection:text-white">
+        <div class="relative flex items-center justify-center min-h-screen">
             
             <div class="max-w-6xl mx-auto mt-16 bg-white p-8 rounded-lg shadow-md">
                 <h2 class="text-2xl font-bold mb-6 text-gray-800">List Produk</h2>

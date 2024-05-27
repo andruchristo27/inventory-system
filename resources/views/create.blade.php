@@ -17,11 +17,11 @@
             }
         </style>
     </head>
-    <body class="antialiased bg-gray-100 dark:bg-gray-900">
-        <div class="relative flex items-center justify-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+    <body class="bg-center bg-no-repeat bg-cover" style="background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg2.jpg); min-height: 100vh;">
+        <div class="relative flex items-center justify-center min-h-screen">
             <div class="mt-16">
                 <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
-                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Form Input Dataaaaaaaaaaaaaaaaaaaaaaaaaa</h2>
+                    <h2 class="text-2xl font-bold mb-6 text-gray-800">Form Input Data</h2>
                     <form action="/post" method="POST">
                         @csrf
                         <div class="mb-4">

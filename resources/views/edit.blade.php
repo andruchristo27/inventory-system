@@ -7,20 +7,11 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         @vite('resources/css/app.css')
-        <style>
-            /* Custom styles for modal background */
-            .modal-bg {
-                display: none;
-            }
-            .modal-bg.active {
-                display: flex;
-            }
-        </style>
     </head>
-    <body class="antialiased bg-gray-100 dark:bg-gray-900">
-        <div class="relative flex items-center justify-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+    <body class="bg-center bg-no-repeat bg-cover" style="background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg2.jpg); min-height: 100vh;">
+        <div class="relative flex items-center justify-center min-h-screen">
             <div class="mt-16">
-                <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
+                <div class="p-8 rounded-lg shadow-md w-full max-w-2xl">
                     <h2 class="text-2xl font-bold mb-4">Edit Produk</h2>
                 
                     @if ($errors->any())

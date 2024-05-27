@@ -8,11 +8,11 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         @vite('resources/css/app.css')
     </head>
-    <body class="antialiased">
-        <div class="relative flex justify-center items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
+    <body class="bg-center bg-no-repeat bg-cover" style="background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(bg2.jpg); min-height: 100vh;">
+        <div class="relative flex justify-center items-center min-h-screen selection:bg-red-500 selection:text-white">
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-center">
-                    <div class="text-center text-2xl font-bold text-gray-500 dark:text-gray-400 sm:text-center">
+                    <div class="text-center text-2xl font-bold text-gray-800 dark:text-gray-400 sm:text-center">
                         SISTEM INVENTARIS
                     </div>
                 </div>
@@ -49,9 +49,12 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-center">
-                    <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-center">
-                        Bos besar ACA
-                    </div>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit" class="text-center text-sm text-gray-800 dark:text-gray-400 sm:text-center hover:text-gray-700 dark:hover:text-gray-300">
+                            Logout
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
